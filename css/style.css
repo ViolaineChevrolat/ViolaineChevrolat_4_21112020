@@ -39,13 +39,13 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
+/*.bloc .container {
     padding-left: 0;
     padding-right: 0;
-}
+}*/
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px
 }
 
 .bloc-md {
@@ -91,7 +91,6 @@ a:hover {
 }
 
 .texture-paper::before {
-   /* background: url("img/texture-paper.png");*/
     background-size: 280px 280px;
 }
 
@@ -306,13 +305,13 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    max-height: 40px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px;
+    min-width: 80px;
 }
 
 .nav-center .navbar-brand img {
@@ -333,6 +332,10 @@ a:hover {
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+}
+
+.accueil a {
+    font-size: 1em;
 }
 
 .nav > li a:hover,
@@ -372,15 +375,20 @@ a:hover {
     margin: 0 1.5em;
 }
 
-adress {
+adress p{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 1em;
     color: #484848;
+    padding: 2px;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
+        list-style-type: none;
+        text-decoration: none;
+        text-decoration-line: none;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
@@ -699,7 +707,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -768,7 +776,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -820,18 +828,14 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-web-sur-Lyon.jpg");
+    background-image: url("../img/la-chouette-agence-web-sur-lyon.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/la-chouette-agence-design.jpg");
+    background-image: url("../img/la-chouette-agence-design.jpg");
 }
 
 @media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -1013,7 +1017,7 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 10px;
     }
     .close-lightbox {
         display: inline-block;
