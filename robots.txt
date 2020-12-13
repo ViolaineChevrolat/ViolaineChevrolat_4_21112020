@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /contact.html
 Disallow: /index.html
+Sitemap: http://https://violainechevrolat.github.io/ViolaineChevrolat_4_21112020/sitemap.xml
